@@ -3,6 +3,8 @@ import Text from "./components/text";
 import Icon from "./components/icon";
 import SpinnerIcon from "./assets/icons/spinner.svg?react"
 import { Badge } from "./components/badge";
+import Button from "./components/button";
+import PlusIcon from "./assets/icons/Plus-Regular.svg?react"
 
 export default function App() {
 	return (
@@ -21,6 +23,9 @@ export default function App() {
 			<div>
 				<Badge variant={"secondary"}>5</Badge>
 				<Badge variant={"primary"}>2 de 5</Badge>
+			</div>
+			<div>
+				<Button icon={PlusIcon}>Nova tarefa</Button>
 			</div>
 		</div>
 	);
