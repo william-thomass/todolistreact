@@ -6,10 +6,11 @@ import { Badge } from "./components/badge";
 import Button from "./components/button";
 import PlusIcon from "./assets/icons/Plus-Regular.svg?react"
 import ButtonIcon from "./components/button-icon";
+import InputText from "./components/inputText";
 
 export default function App() {
 	return (
-		<div className="grid gap-3">
+		<div className="grid gap-10">
 			<div className="flex flex-col gap-2">
 				<Text variant="body-md" className="text-pink-base">
 					Olá Mundo!
@@ -32,6 +33,9 @@ export default function App() {
 				<ButtonIcon icon={TrashIcon} variant={"primary"}/>
 				<ButtonIcon icon={TrashIcon} variant={"secondary"}/>
 				<ButtonIcon icon={TrashIcon} variant={"tertinary"}/>
+			</div>
+			<div>
+				<InputText size={"md"} />
 			</div>
 		</div>
 	);
