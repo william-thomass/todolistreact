@@ -7,6 +7,8 @@ import Button from "./components/button";
 import PlusIcon from "./assets/icons/Plus-Regular.svg?react"
 import ButtonIcon from "./components/button-icon";
 import InputText from "./components/inputText";
+import InputCheckbox from "./components/input-checkbox";
+import Card from "./components/Card";
 
 export default function App() {
 	return (
@@ -36,6 +38,13 @@ export default function App() {
 			</div>
 			<div>
 				<InputText size={"md"} />
+			</div>
+			<div>
+				<InputCheckbox/>
+			</div>
+
+			<div>
+				<Card size={"md"}>Olá mundo</Card>
 			</div>
 		</div>
 	);
