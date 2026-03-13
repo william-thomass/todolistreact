@@ -10,6 +10,7 @@ import InputText from "./components/inputText";
 import InputCheckbox from "./components/input-checkbox";
 import Card from "./components/Card";
 import Container from "./components/container";
+import Skeleton from "./components/skeleton";
 
 export default function App() {
 	return (
@@ -27,27 +28,35 @@ export default function App() {
 				<Icon svg={TrashIcon} className="fill-green-base" />
 				<Icon svg={SpinnerIcon} animate/>
 			</div>
-			<div>
+			<div className="flex gap-1">
 				<Badge variant={"secondary"}>5</Badge>
 				<Badge variant={"primary"}>2 de 5</Badge>
+				<Badge loading>5</Badge>
 			</div>
 			<div>
 				<Button icon={PlusIcon}>Nova tarefa</Button>
 			</div>
-			<div>
+			<div className="flex gap-1">
 				<ButtonIcon icon={TrashIcon} variant={"primary"}/>
 				<ButtonIcon icon={TrashIcon} variant={"secondary"}/>
 				<ButtonIcon icon={TrashIcon} variant={"tertinary"}/>
+				<ButtonIcon icon={TrashIcon} loading/>
 			</div>
 			<div>
 				<InputText size={"md"} />
 			</div>
-			<div>
+			<div className="flex gap-1">
 				<InputCheckbox/>
+				<InputCheckbox loading/>
 			</div>
 
 			<div>
 				<Card size={"md"}>Olá mundo</Card>
+			</div>
+			<div className="space-y-2">
+			  <Skeleton className="h-6"/>
+			  <Skeleton className="h-6"/>
+			  <Skeleton className="h-6 w-96"/>
 			</div>
 		</div>
 		</Container>
