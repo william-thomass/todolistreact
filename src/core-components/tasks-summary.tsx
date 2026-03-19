@@ -5,7 +5,7 @@ export default function TasksSummary(){
   return(
     <>
     <div className="flex  items-center gap-2">
-      <Text variant={"body-sm-bold"} className="!text-gray-300">
+      <Text variant={"body-sm-bold"} className="text-gray-300!">
         Tarefas
       </Text>
       <Badge variant={"secondary"}>
@@ -13,7 +13,7 @@ export default function TasksSummary(){
       </Badge>
     </div>
        <div className="flex items-center gap-2">
-      <Text variant={"body-sm-bold"} className="!text-gray-300">
+      <Text variant={"body-sm-bold"} className="text-gray-300!">
         concluidos
       </Text>
       <Badge variant={"primary"}>
